@@ -1,17 +1,17 @@
 [
     {
       "icon": "american-football",
-      "name": "alert",
+      "name": "Alert",
       "redirectTo": "/alert"
     },
     {
       "icon": "american-football",
-      "name": "action sheet",
+      "name": "Action sheet",
       "redirectTo": "/action-sheet"
     },
     {
       "icon": "person-circle-outline",
-      "name": "avatar",
+      "name": "Avatar",
       "redirectTo": "/avatar"
     },
     {
@@ -61,12 +61,17 @@
     },
     {
       "icon": "reorder-three-outline",
-      "name": "list - reorder",
+      "name": "List - reorder",
       "redirectTo": "/list-reorder"
     },
     {
       "icon": "refresh-circle",
-      "name": "loading",
+      "name": "Loading",
       "redirectTo": "/loading"
+    },
+    {
+      "icon": "phone-portrait-outline",
+      "name": "Modal",
+      "redirectTo": "/modal"
     }
   ]

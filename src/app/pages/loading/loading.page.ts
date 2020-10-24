@@ -8,22 +8,28 @@ import { LoadingController } from '@ionic/angular';
 })
 export class LoadingPage implements OnInit {
 
-  constructor(public loadingController: LoadingController) {}
   loading: any;
+
+
+  constructor( private loadingCtrl: LoadingController ) { }
+
   ngOnInit() {
-    this.presentLoading('Cargando...');
+
+    this.presentLoading( 'Espere' );
 
     setTimeout(() => {
       this.loading.dismiss();
-    }, 1500);
+    }, 1500 );
+
+ 
   }
 
-  async presentLoading(message: string) {
-    this.loading = await this.loadingController.create({
+  async presentLoading( message: string ) {
+    this.loading = await this.loadingCtrl.create({
       message
+      // duration: 2000
     });
-    return  this.loading.present();
+    return this.loading.present();
   }
-
 
 }

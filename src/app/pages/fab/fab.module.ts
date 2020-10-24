@@ -1,20 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FabPageRoutingModule } from './fab-routing.module';
-
 import { FabPage } from './fab.page';
-import { ComponentsModule } from 'src/app/components/components.module';
+import { ComponentsModule } from '../../components/components.module';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: FabPage
+  }
+];
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FabPageRoutingModule,
+    RouterModule.forChild(routes),
     ComponentsModule
   ],
   declarations: [FabPage]

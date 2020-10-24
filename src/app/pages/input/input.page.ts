@@ -8,18 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class InputPage implements OnInit {
 
   nombre: string;
-  usuario =  {
+
+  usuario = {
     email: '',
     password: ''
-  }
+  };
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  onSubmitTemplate(){
-    console.log('form submit');
-    console.log(this.usuario);
+  onSubmitTemplate() {
+    console.log('Form submit');
+    console.log( this.usuario );
   }
 
 }

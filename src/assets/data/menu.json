@@ -1,16 +1,16 @@
 [
     {
       "icon": "american-football",
+      "name": "Action Sheet",
+      "redirectTo": "/action-sheet"
+    },
+    {
+      "icon": "appstore",
       "name": "Alert",
       "redirectTo": "/alert"
     },
     {
-      "icon": "american-football",
-      "name": "Action sheet",
-      "redirectTo": "/action-sheet"
-    },
-    {
-      "icon": "person-circle-outline",
+      "icon": "beaker",
       "name": "Avatar",
       "redirectTo": "/avatar"
     },
@@ -21,17 +21,17 @@
     },
     {
       "icon": "card",
-      "name": "Card",
+      "name": "Cards",
       "redirectTo": "/card"
     },
     {
       "icon": "checkmark-circle-outline",
-      "name": "Check",
+      "name": "Checkbox",
       "redirectTo": "/check"
     },
     {
       "icon": "calendar",
-      "name": "Datetime",
+      "name": "DateTime",
       "redirectTo": "/date-time"
     },
     {
@@ -41,27 +41,27 @@
     },
     {
       "icon": "grid",
-      "name": "Grid - rows",
+      "name": "Grid - Rows",
       "redirectTo": "/grid"
     },
     {
       "icon": "infinite",
-      "name": "Infinite scroll",
+      "name": "Infinite Scroll",
       "redirectTo": "/infinite-scroll"
     },
     {
       "icon": "hammer",
-      "name": "Input - forms",
+      "name": "Input - Forms",
       "redirectTo": "/input"
     },
     {
       "icon": "list",
-      "name": "List - sliding",
+      "name": "Listas - Sliding",
       "redirectTo": "/list"
     },
     {
-      "icon": "reorder-three-outline",
-      "name": "List - reorder",
+      "icon": "reorder",
+      "name": "Listas - Reorder",
       "redirectTo": "/list-reorder"
     },
     {
@@ -70,13 +70,44 @@
       "redirectTo": "/loading"
     },
     {
-      "icon": "phone-portrait-outline",
+      "icon": "phone-portrait",
       "name": "Modal",
       "redirectTo": "/modal"
     },
     {
-      "icon": "tablet-portrait-outline",
+      "icon": "tablet-portrait",
       "name": "Popover",
       "redirectTo": "/popover"
+    },
+    {
+      "icon": "code-working",
+      "name": "ProgressBar y Range",
+      "redirectTo": "/progress-bar"
+    },
+    {
+      "icon": "arrow-round-down",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
+    },
+    {
+      "icon": "search",
+      "name": "Searchbar",
+      "redirectTo": "/searchbar"
+    },
+    {
+      "icon": "copy",
+      "name": "Segment",
+      "redirectTo": "/segment"
+    },
+    {
+      "icon": "albums",
+      "name": "Slides",
+      "redirectTo": "/slides"
+    },
+    {
+      "icon": "cog",
+      "name": "Tabs",
+      "redirectTo": "/tabs/account"
     }
   ]
+  

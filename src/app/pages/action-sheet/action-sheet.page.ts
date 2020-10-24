@@ -8,7 +8,7 @@ import { ActionSheetController } from '@ionic/angular';
 })
 export class ActionSheetPage implements OnInit {
 
-  constructor(private actionSheetCtrl: ActionSheetController) { }
+  constructor(private actionSheetCtrl: ActionSheetController ) { }
 
   ngOnInit() {
   }
@@ -52,6 +52,7 @@ export class ActionSheetPage implements OnInit {
         }
       }]
     });
+
     await actionSheet.present();
   }
 

@@ -10,7 +10,8 @@ export class ModalInfoPage implements OnInit {
 
   @Input() nombre;
   @Input() pais;
-  constructor(private modalCtrl: ModalController) { }
+
+  constructor( private modalCtrl: ModalController ) { }
 
   ngOnInit() {
   }
@@ -20,10 +21,12 @@ export class ModalInfoPage implements OnInit {
   }
 
   salirConArgumentos() {
+
     this.modalCtrl.dismiss({
       nombre: 'Felipe',
       pais: 'España'
     });
+
   }
 
 }

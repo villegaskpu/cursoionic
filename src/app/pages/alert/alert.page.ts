@@ -10,9 +10,42 @@ export class AlertPage implements OnInit {
 
   titulo: string;
 
-  constructor( public alertCtrl:AlertController) { }
+  constructor( public alertCtrl: AlertController ) { }
 
   ngOnInit() {
+  }
+
+  async presentInput() {
+
+    const input = await this.alertCtrl.create({
+      header: 'Input',
+      subHeader: 'Ingrese su nombre:',
+      inputs: [
+        {
+          name: 'txtNombre',
+          type: 'text',
+          placeholder: 'Nombre'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            console.log('Confirm Cancel');
+          }
+        }, {
+          text: 'OK',
+          handler: ( data ) => {
+            console.log('Confirm Ok', data);
+            this.titulo = data.txtNombre;
+          }
+        }
+      ]
+    });
+
+    await input.present();
+
   }
 
   async presentAlert() {
@@ -26,51 +59,18 @@ export class AlertPage implements OnInit {
           role: 'cancel',
           cssClass: 'secondary',
           handler: (blah) => {
-            console.log('Confirm Cancel: blah');
+            console.log('Cancelar');
           }
         },
         {
-          text: 'Ok',
-          cssClass: 'secondary',
-          handler: (blah) => {
-            console.log('Confirm Ok: blah');
+            text: 'Ok',
+            handler: (blah) => {
+              console.log('Botón OK');
           }
         }
       ]
     });
 
-    await alert.present();
-  }
-
-  async presentInput() {
-    const alert = await this.alertCtrl.create({
-      header: 'Input',
-      subHeader: 'Nombre',
-      inputs: [
-        {
-          name: 'name1',
-          type: 'text',
-          placeholder: 'ingresa tu nombre'
-        }
-      ],
-      buttons: [
-        {
-          text: 'cancelar',
-          role: 'cancel',
-          handler: () => {
-            console.log('btn cancelar');
-          }
-
-        },
-        {
-          text: 'Ok',
-          handler: (data) => {
-            console.log('btn ok : ', data);
-            this.titulo = data.name1;
-          }
-        }
-      ]
-    });
     await alert.present();
   }
 

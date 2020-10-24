@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckPage implements OnInit {
 
-  data = [
+  data =  [
     {
       name: 'primary',
       selected: false
@@ -25,12 +25,15 @@ export class CheckPage implements OnInit {
       selected: true
     }
   ];
+
+
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  onClick(check){
+  onClick( check ) {
     console.log(check);
   }
 

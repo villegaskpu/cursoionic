@@ -7,24 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListReorderPage implements OnInit {
 
-  personajes = ['Aquaman', 'Superman', 'Flash', 'Mujer maravilla'];
+
+  personajes = ['Aquaman', 'Superman', 'Batman', 'Flash', 'Mujer Maravilla'];
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  reorder(event) {
-    // Before complete is called with the items they will remain in the
-    // order before the drag
-    console.log('Before complete', this.personajes);
+  reorder( event ) {
+    // console.log(event);
 
-    // Finish the reorder and position the item in the DOM based on
-    // where the gesture ended. Update the items variable to the
-    // new order of items
-    this.personajes = event.detail.complete(this.personajes);
+    const itemMover = this.personajes.splice( event.detail.from, 1 )[0];
+    this.personajes.splice( event.detail.to, 0, itemMover );
 
-    // After complete is called the items will be in the new order
-    console.log('After complete', this.personajes);
+    event.detail.complete();
+  }
+
+  onClick() {
+    console.log(this.personajes);
   }
 
 }
